@@ -1,6 +1,6 @@
 #include <iostream>
 #include <math.h>
-#define  EPS  0000000.1
+#define  EPS  00000.1
 using namespace std;
 
 int main()
@@ -16,13 +16,14 @@ if(d < 0)
 {
  return 0;
 }
-if(d == 0)
-{
 
-    if(fabs((b-2*b)/2*a) < EPS)  cout << (b-2*b)/2*a;
+if(d < EPS)
+{
+    cout << (b-2*b)/2*a;
     return 0;
 }
-if(fabs(((b - 2*b + sqrt(d))/(2*a))) < EPS); cout << (b - 2*b + sqrt(d))/(2*a) << endl;
-if(fabs(((b - 2*b - sqrt(d))/(2*a))) < EPS); cout << (b - 2*b - sqrt(d))/(2*a) << endl;
+i = ((b - 2*b + sqrt(d))/(2*a));
+i1 = ((b - 2*b - sqrt(d))/(2*a));
+cout << i << endl << i1;
 return 0;
 }
