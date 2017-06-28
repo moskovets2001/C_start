@@ -11,19 +11,23 @@ int main()
     scanf("%d", &a);
     scanf("%d", &b);
     scanf("%d", &c);
-    if(a >= max)
-    {
-        max = a; i = 1;
-    }
-    if(b >= max)
-    {
-            max = b; i = 2;
-    }
-    if(c >= max)
-    {
-        max = c; i = 3;
-    }
-
+        if(a >= max)
+            {
+                max = a; i = 1;
+            }
+        if(b >= max)
+            {
+                max = b; i = 2;
+            }
+        if(c >= max)
+            {
+                max = c; i = 3;
+            }
+    if(a+b < c || b+c < a || a+c < b)
+        {
+             printf("impossible");
+             return 0;
+        }
     if(i == 1)
     {
         i = c;
