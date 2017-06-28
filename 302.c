@@ -23,11 +23,7 @@ int main()
             {
                 max = c; i = 3;
             }
-    if(a+b < c || b+c < a || a+c < b)
-        {
-             printf("impossible");
-             return 0;
-        }
+
     if(i == 1)
     {
         i = c;
@@ -40,16 +36,21 @@ int main()
         c = b;
         b = i;
     }
+    if(a+b <= c || b+c <= a || a+c <= b)
+        {
+             printf("impossible");
+             return 0;
+        }
     if(a*a + b*b == c*c)
-    {
-        printf("right");
-        return 0;
-    }
+        {
+            printf("right");
+            return 0;
+        }
     if(a*a + b*b > c*c)
-    {
-        printf("acute");
-        return 0;
-    }
+        {
+            printf("acute");
+            return 0;
+        }
 
     printf("obtuse");
     return 0;
