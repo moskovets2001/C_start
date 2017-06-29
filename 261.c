@@ -24,7 +24,7 @@ k = o;
 if (fabs(o - k) < EPS)
 {
 
-if(c*(int)o + d != 0)  printf("%d",  o);
+if(c*(int)o + d != 0)  printf("%d",  (int)o);
 else  printf("NO");
 }
 else printf("NO");
