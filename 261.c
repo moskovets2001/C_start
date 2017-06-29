@@ -4,7 +4,7 @@
 
 int main()
 {
-int a, b, c, d;
+int a, b, c, d, k;
 float o;
 
 
@@ -20,7 +20,8 @@ return 0;
 if(a == 0 && b == 0) {printf("INF");
 return 0;
 }
-if (floor(fabs(o + 0.5)) == (int)o)
+k = o;
+if (o == k)
 {
 
 if(c*(int)o + d != 0)  printf("%d",  o);
