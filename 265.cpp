@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int k, m, n, stor, kolvo;
+    int k, m, n, stor;
 
 
 
