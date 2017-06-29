@@ -36,7 +36,7 @@ int main()
         c = b;
         b = i;
     }
-    if(a+b <= c || b+c <= a || a+c <= b)
+    if(a+b <= c)
         {
              printf("impossible");
              return 0;
