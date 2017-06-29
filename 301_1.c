@@ -5,7 +5,7 @@
 
 int main()
 {
-float a, b, c, d, i, i1;
+double a, b, c, d, i, i1;
 
 
 
@@ -13,7 +13,7 @@ scanf("%d", &a);
 scanf("%d", &b);
 scanf("%d", &c);
 
-d = (b*b) - (4*c*a);
+d = b*b - 4*c*a;
 if(fabs(d) < EPS)
 {
     printf("%f", (-b/(2*a)));
