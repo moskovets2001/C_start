@@ -21,7 +21,7 @@ if(a == 0 && b == 0) {printf("INF");
 return 0;
 }
 k = o;
-if (o == k)
+if (fabs(o - k) < EPS)
 {
 
 if(c*(int)o + d != 0)  printf("%d",  o);
