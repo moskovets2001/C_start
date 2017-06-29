@@ -20,10 +20,10 @@ return 0;
 if(a == 0 && b == 0) {printf("INF");
 return 0;
 }
-if (floor(fabs(o + 0.5)) == fabs(o))
+if (floor(fabs(o + 0.5)) == (int)o)
 {
 
-if(c*o + d != 0)  printf("%d",  o);
+if(c*(int)o + d != 0)  printf("%d",  o);
 else  printf("NO");
 }
 else printf("NO");
