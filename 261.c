@@ -5,16 +5,17 @@
 
 int main()
 {
-float a, b, c, h, o;
+int a, b, c, d;
+float o;
 #define  EPS  0000000.1
 
 
 scanf("%d", &a);
 scanf("%d", &b);
 scanf("%d", &c);
-scanf("%d", &h);
+scanf("%d", &d);
     o = -b/a;
-if((c == a && h == b) || (a == 0 && b != 0)) { printf("NO");
+if((c == a && d == b) || (a == 0 && b != 0)) { printf("NO");
 return 0;
 
 }
@@ -24,7 +25,7 @@ return 0;
 if (floor(fabs(o - 0.5)) == fabs(o))
 {
 
-if(c*o + h != 0)  printf("%d", &o);
+if(c*o + d != 0)  printf(&o);
 else  printf("NO");
 }
 else printf("NO");
