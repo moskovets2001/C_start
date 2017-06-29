@@ -4,7 +4,7 @@
 
 int main()
 {
-int a, b, c, h;
+float a, b, c, h, o;
 
 
 
@@ -20,9 +20,10 @@ return 0;
 if(a == 0 && b == 0) {printf("INF");
 return 0;
 }
-if (floor((abs((b - 2*b)/a) - 0.5)) == abs((b - 2*b)/a))
+if (floor((fabs((b - 2*b)/a) - 0.5)) == fabs((b - 2*b)/a))
 {
-if(c*(b - 2*b)/a + h != 0)  printf((b - 2*b)/a);
+    o = (b - 2*b)/a;
+if(c*(b - 2*b)/a + h != 0)  printf("%d", &o);
 else  printf("NO");
 }
 else printf("NO");
