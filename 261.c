@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 #define  EPS  0000000.1
-//using namespace std;
 
 int main()
 {
@@ -22,10 +21,10 @@ return 0;
 if(fabs(a) < EPS && fabs(b) < EPS) {printf("INF");
 return 0;
 }
-if (floor(fabs(o - 0.5)) == fabs(o))
+if (floor(fabs(o + 0.5)) == fabs(o))
 {
 
-if(c*o + d != 0)  printf(&o);
+if(c*o + d != 0)  printf("%d",  o);
 else  printf("NO");
 }
 else printf("NO");
