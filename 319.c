@@ -9,6 +9,11 @@ int main()
     double n;
     scanf("%lf%lf", &a, &n);
     a1 = a;
+    if(n == 0)
+    {
+        printf("1");
+        return 0;
+    }
     for(i = 1; i < n; i++)
     {
         c += a1*a;
