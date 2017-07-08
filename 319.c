@@ -14,7 +14,7 @@ int main()
         printf("1");
         return 0;
     }
-    for(i = 1; i < n; i++)
+    for(i = 0; i < n-1; i++)
     {
         a1 *= a;
         c += a1;
