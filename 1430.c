@@ -9,13 +9,11 @@ int main()
         printf("1");
     for(i = 0; i < n; i++)
     {
-        for(j = 0; j < i; j++)
+        for(j = 0; j < i && count != n; j++)
         {
-            if(count == n) break;
             printf("%d ", i);
             count++;
         }
-
     }
     return 0;
 }
