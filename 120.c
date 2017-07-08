@@ -4,15 +4,14 @@
 
 int main()
 {
-    int n, i, j, f = 1;
-    double sum;
+    int n, i;
+    double sum = 0, f = 1;
     scanf("%d", &n);
     for(i = 1; i <= n; i++)
     {
-        for(j = 1; j <= i; j++)
-            f *= j;
+        f *= i;
 
-       sum = sum + 1/f;
+        sum = sum + 1/f;
     }
     sum++;
     printf("%.5lf", sum);
