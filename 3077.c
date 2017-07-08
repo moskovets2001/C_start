@@ -4,22 +4,22 @@
 
 int main()
 {
-    int n, f, k = 0, max = 1;
-    scanf("%d", &n);
-        f = n;
-        scanf("%d", &n);
-        k++;
-        while (f == n || n != 0)
-        {
-            f = n;
-            scanf("%d", &n);
-            k++;
-            if (k > max)
-                max = k;
-            k = 0;
-        }
+    int n, f, k = 0, max = 0;
 
-    printf("%d", max+1);
+        while (n != 0)
+        {
+            scanf("%d", &n);
+            if(n == f)
+                k++;
+            else
+            {
+                if (k > max)
+                    max = k;
+                k = 1;
+                f = n;
+            }
+        }
+    printf("%d", max);
     return 0;
 }
 
