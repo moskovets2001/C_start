@@ -16,8 +16,8 @@ int main()
     }
     for(i = 1; i < n; i++)
     {
-        c += a1*a;
         a1 *= a;
+        c += a1;
     }
     printf("%lf", c + a + 1);
     return 0;
