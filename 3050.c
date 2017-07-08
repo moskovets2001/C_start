@@ -3,12 +3,12 @@
 
 int main()
 {
-    int n, s = 1;
+    int n, s = 2;
     scanf("%d", &n);
-    while (s < n)
-        s = s*2;
+    while (n % 2 == 0 && n != 1)
+        n = n / 2;
 
-    if (s == n)
+    if (n == 1)
         printf("YES");
     else
         printf("NO");
