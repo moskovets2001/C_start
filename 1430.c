@@ -2,16 +2,18 @@
 
 int main()
 {
-    int n, i, j, j1 = 0;
+    int n, i, j, count = 0;
 
     scanf("%d", &n);
-    for(i = 1; i <= n; i++)
+    if (n == 1)
+        printf("1");
+    for(i = 0; i < n; i++)
     {
-        for(j = 1; j <= i; j++)
+        for(j = 0; j < i; j++)
         {
-            if(j1 == n) break;
+            if(count == n) break;
             printf("%d ", i);
-            j1++;
+            count++;
         }
 
     }
