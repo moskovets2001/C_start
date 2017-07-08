@@ -10,16 +10,14 @@ int main()
     {
         f = n;
         scanf("%d", &n);
-        if (f == n)
+        k++;
+        while (f == n)
         {
+            f = n;
+            scanf("%d", &n);
             k++;
-            while (f == n)
-            {
-                f = n;
-                scanf("%d", &n);
-                k++;
-            }
         }
+
         if (k > max)
             max = k;
         k = 0;
