@@ -3,15 +3,24 @@
 
 int main()
 {
-    long long n, sum;
+    long long N, M;
 
-    scanf("%lld", &n);
-    if(n < 0)
-        n  = -n;
-    if(n % 2 == 0)
-        sum = (1 + n) * (n / 2);
+    scanf("%lld", &N);
+
+    if(N <= 0)
+    {
+        M  = -N;
+        if(M % 2 == 0)
+            printf("%lld", 1 - (M / 2) * (M + 1));
+        else
+            printf("%lld", 1 - ((M + 1) / 2) * M);
+    }
     else
-        sum = ((n + 1) / 2) * n;
-    printf("%lld", sum);
+    {
+        if(N % 2 == 0)
+            printf("%lld", (N / 2) * (N + 1));
+        else
+            printf("%lld", N * ((N + 1) / 2));
+    }
     return 0;
 }
